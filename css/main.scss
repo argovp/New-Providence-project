@@ -1,0 +1,357 @@
+$font-title: 'VarelaRound';
+$font-text: 'lato', sans-serif;
+$colorB: rgb(38, 125, 244);
+$colorG: rgb(111, 199, 84);
+$color-header: rgb(38, 39, 45);
+$color-text: rgb(140, 143, 148);
+
+@import 'button.scss';
+@import 'forms-inputs.scss';
+
+@font-face {
+    font-family: 'lato';
+    src: url(../fonts/Lato.ttf);
+}
+@font-face {
+    font-family: 'VarelaRound';
+    src: url(../fonts/VarelaRound.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    font-family: $font-text;
+    color: $color-text;
+    font-size: 20px;
+}
+h1, h2, h3{
+    font-family: $font-title;
+    color: $color-header;
+}
+p.subtitle {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+.container{
+    height: 100%;
+   }
+
+header{
+    position: absolute;    
+    height: 130px;
+    left: 0;
+    top: 0;
+    z-index: 5; 
+    
+    .mobile-icon{
+        position: absolute;
+        color: $color-header;
+        top: 34%;
+    }  
+    ul{
+        list-style: none;
+        padding: 0;              
+        a{
+            font-size: 16px;
+            text-decoration: none;
+            color: $color-header;
+            line-height: 1.2;
+            &:hover{
+                color: $color-text;
+            }
+                      
+        }
+    }   
+    .header-logo{              
+        padding-bottom: 17px;
+    }
+   
+}
+
+
+.home{   
+    padding: 200px 0;
+    background: url(../images/home_bg.jpg) no-repeat center/cover;      
+    position: relative;
+    overflow: hidden;    
+    .container{
+        .home-content{
+            text-align: center;
+            padding-bottom: 25%;
+            h1{
+                margin: 0;
+                font-size: 62px;
+                line-height: 1.161;
+                font-weight: normal;
+            }
+            p{     
+                line-height: 1.4;
+                margin: 45px 0 65px;
+                animation-delay: .2s;
+            }
+            button{                
+                animation-delay: .3s;   
+        
+                i{
+                    margin-right: 10px;
+                }
+            }            
+        }
+        .home-iphone{
+            display: block;
+            position: absolute;          
+            bottom: -310px;
+            animation-delay: .4s;          
+        }   
+    }
+}
+.features{
+    padding: 8rem;
+    .container{
+        .feature-item{
+            width: 40%;
+            animation-delay: .2s;
+            h2{
+                font-size: 1.3rem;
+                font-family: "Lato";
+                font-weight: normal;
+                line-height: 1.308;
+                margin: 2em 0;                
+            }
+            p{
+                font-size: 0.9rem;
+                line-height: 1.444;                
+            }
+        }
+    }
+}
+.iphone-protect{
+    padding: 200px 0 500px;
+    position: relative;   
+    .img-protect{
+        position: absolute;
+        bottom: 200px;
+        right: 60%;
+        animation-delay: .2s;        
+    }
+    .text-protect{
+        width: 40%;        
+        h2{ 
+            font-size: 2.1rem;
+            font-weight: 500;
+            line-height: 1.238;
+            margin-bottom: 4rem;           
+        }
+        p{
+            line-height: 1.4;            
+        }
+        .button-protect{
+            margin-top: 4rem;
+            button{
+                // font-size: 16px;
+                // font-family: "Lato";
+                // line-height: 1.2;
+                // height: 2.625em;           
+                &:nth-child(1){                                   
+                    i{
+                        margin-left: 3em;
+                    }
+                }
+                &:nth-child(2){
+                    padding: 9px 25px;                                    
+                    margin-left: 1em;
+                }           
+            }
+        }
+    }
+}
+
+.map{
+    position: relative;
+    padding: 100px 0 200px;
+    .map-text{
+        width: 40%;
+        h2{
+            font-size: 2.1rem;
+            font-weight: 500;
+            line-height: 1.238;
+            margin-bottom: 4rem; 
+        }
+        p{
+            line-height: 1.4;            
+        }
+        .partners-logo{
+            h3{
+                font-size: 12px;
+                font-family: 'lato', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.833;
+                margin: 70px 0 30px;
+            }
+            a{
+                margin-right: 30px;
+            }
+        }
+    }
+    .map-img{
+        position: absolute;
+        left: 50%;
+        animation-delay: .2s;
+    }
+}
+
+
+
+.iphone-screens{
+    padding: 140px 0 800px;
+    background-color: #f4f4f5;
+    overflow: hidden;
+    .row{
+        div{
+            text-align: center;
+        }
+    }
+    h2 {
+        font-size: 42px;
+        line-height: 1.238;
+      }
+      hr {
+        width: 50px;
+        height: 2px;
+        margin: 40px auto;
+        background-color: $colorB;
+      }
+      p{
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.833;
+        margin-bottom: 40px;
+      }    
+    }
+    .images-list{
+        width: 100%;
+        position: relative;
+        list-style: none;
+        li{
+            position: absolute;
+            width: 320px;
+            top: 92px;
+            box-shadow: 10px 10px 16px 0px rgba(61, 61, 62, 0.15);
+           img{
+            max-width: 100%;
+           }       
+        }
+        li:nth-child(1){
+            left: 50%;
+            margin-left: -880px;
+        } 
+        li:nth-child(2){
+            left: 50%;
+            margin-left: -530px;
+        } 
+        li:nth-child(3){       
+            width: 395px;
+            top: 0;
+            left: 50%;
+            margin-left: -193px;
+            box-shadow: none;
+            animation-delay: .2s;       
+             
+            img{
+                max-width: 100%;
+            }      
+        }
+        li:nth-child(4){
+            right: 50%;
+            margin-right: -530px;
+        }
+        li:nth-child(5){
+            right: 50%;
+            margin-right: -880px;
+        }   
+}
+
+
+.buy-smartphone{
+    padding: 120px 0 130px;
+    background-color: #f4f4f5;
+    h2{
+        font-size: 42px;
+        margin: 45px 0;
+    }
+    form{
+        margin-bottom: 66px;
+        .btn i{
+            font-size: 12px;
+            margin-left: 18px;
+        }
+    } 
+    .btn-dark {
+        padding: 9px 28px;
+        i {
+            font-size: 32px;
+            display: inline-block;
+            margin-left: 0;
+            margin-right: 18px;
+          }
+          span {
+            font-size: 12px;
+            display: inline-block;
+            text-align: left;
+            b {
+                font-size: 22px;
+                // line-height: 18px;
+                font-weight: 400;
+              }
+          }
+      }    
+}
+
+
+
+.customers{
+    padding: 130px 0;
+    .img-box{
+        img{
+            opacity: .2;
+            transform: scale(0.7);
+            border-radius: 100%;            
+        }  
+        .active{
+            img{
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.5);
+            }
+        }            
+    }
+    .testimonial {
+        padding-top: 75px;
+        h3{
+            font-size: 32px;
+            font-family: $font-text;
+            padding-bottom: 45px;           
+        }
+        .star-rating{
+            padding: 15px 0 70px;
+           i {
+                font-size: 22px;
+                color: #f2bc3b;
+              }
+        }
+        .customer-name {
+            font-size: 12px;
+            color: $color-header;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+    }    
+}
+

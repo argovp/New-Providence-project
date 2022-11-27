@@ -1,0 +1,35 @@
+.btn {
+    font-size: 16px;
+    font-family: $font-text;
+    line-height: 1.2;
+    font-weight: 400;
+    padding: 9px 16px;
+    text-decoration: none;
+    color: $color-header;
+    border: 1px solid rgba(38, 39, 45, 0.1);
+    border-radius: 30px;   
+  }  
+  
+  .btn-lg {
+    padding: 14px 48px;
+  }
+  
+  .btn-blue {
+    background-color: $colorB;
+    color: white;
+  }
+  .btn-blue:hover{color:$colorB}
+  
+  .btn-green {
+    background-color: $colorG;
+    color: white;
+  }
+  .btn-green:hover{
+    color: $colorG;
+  }
+  
+  .btn-dark {
+    background-color: #131315;
+    color: white;
+  } 
+ 
